@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exams - Student Information and Teacher Slots</title>
+    <link rel="stylesheet" href="exams.css">
+</head>
+<body>
+    <header>
+        <h1>Exams</h1>
+    </header>
+
+    <main>
+        <section id="studentDetails">
+            <h2>Student Details</h2>
+            <form id="studentForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="id">Student ID:</label>
+                <input type="text" id="id" required>
+
+                <label for="course">Course:</label>
+                <input type="text" id="course" required>
+
+                <label for="department">Department:</label>
+                <input type="text" id="department" required>
+
+                <button type="button" id="nextBtn">Next</button>
+            </form>
+        </section>
+
+        <section id="teacherSlots" class="hidden">
+            <h2>Select Teacher and Time Slot</h2>
+            <form id="slotForm">
+                <label for="teacher">Teacher:</label>
+                <select id="teacher" required>
+                    <option value="">Select a teacher</option>
+                    <option value="Prof. Ramya">Prof. Ramya</option>
+                    <option value="Prof. IndiraDevi">Prof. IndiraDevi</option>
+                    <option value="Prof. Ashwini">Prof. Ashwini</option>
+                </select>
+
+                <label for="timeSlot">Time Slot:</label>
+                <select id="timeSlot" required>
+                    <option value="">Select a time slot</option>
+                    <option value="9:00 AM - 10:00 AM">9:00 AM - 10:00 AM</option>
+                    <option value="11:00 AM - 12:00 PM">11:00 AM - 12:00 PM</option>
+                    <option value="2:00 PM - 3:00 PM">2:00 PM - 3:00 PM</option>
+                </select>
+
+                <button type="button" id="submitBtn">Submit</button>
+            </form>
+        </section>
+
+        <section id="preview" class="hidden">
+            <h2>Preview</h2>
+            <div id="previewContent"></div>
+            <button type="button" id="proceedBtn">Proceed</button>
+        </section>
+    </main>
+
+  
+
+    <script src="exams.js"></script>
+</body>
+</html>
